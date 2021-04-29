@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo13</title>
+	<script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+	<div id="app">
+
+		<input v-bind:value="msg">
+	</div>
+
+
+	<script type="text/javascript">
+		vm = new Vue({
+			el: '#app',
+			data: {
+				msg: '我是v-bind'
+			}
+		})
+	</script>
+</body>
+</html>

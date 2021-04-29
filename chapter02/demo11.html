@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo11</title>
+	<script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+	<p v-text="msg"></p>
+</div>
+
+<script type="text/javascript">
+	// v-text是在DOM元素内部插入文本内容
+	var vm = new Vue({
+		el: '#app',
+		data: {
+			msg: '我是v-text'
+		}
+	})
+</script>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo16</title>
+	<script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<div v-if="isShow" style="background-color: #ccc;">v-if</div>
+		<div v-show="isShow" style="background-color: #ccc;">v-if</div>
+		<button @click="isShow=!isShow">显示/隐藏</button>
+		
+	</div>
+
+
+	<script type="text/javascript">
+		vm = new Vue({
+			el: '#app',
+			data: {
+				isShow: true
+			}
+		})
+	</script>
+</body>
+</html>
