@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo06</title>
+	<script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<div>{{message | toUpCase}}</div>
+	</div>
+
+</body>
+<script type="text/javascript">
+	var vm = new Vue({
+		el: '#app',
+		data: {
+			message: 'helloworld'
+		},
+		filters: {
+			toUpCase(value) {
+				return value ? value.toUpperCase() : ''
+			}
+		}
+	})
+</script>
+</html>

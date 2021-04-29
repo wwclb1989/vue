@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo03</title>
+	<script src="vue.js" "></script>
+</head>
+<body>
+<div id="app">
+	<button @click="showInfo">请单击</button>
+	<p>{{msg}}</p>
+</div>
+<script>
+	var vm = new Vue({
+		el:'#app',
+		data: {
+			msg: ''
+		},
+		methods: {
+			showInfo() {
+				this.msg='触发单击事件'
+			}
+		}
+	})
+</script>
+</body>
+</html>

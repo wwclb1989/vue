@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo02</title>
+	<script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+<div id="app">
+	<p>{{name}}</p>
+</div>
+<script type="text/javascript">
+	var vm = new Vue({
+		el: '#app',
+		data: {
+			name: '定义初始数据'
+		}
+	})
+	console.log(vm.$data.name)
+	console.log(vm.name)
+</script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>demo07</title>
+	<script type="text/javascript" src="vue.js"></script>
+</head>
+<body>
+	<div id="app">
+		<div v-bind:id="dataId | formatId">helloworld</div>
+	</div>
+
+</body>
+<script type="text/javascript">
+	var vm = new Vue({
+		el: '#app',
+		data: {
+			dataId: 'dff1'
+		},
+		filters: {
+			formatId(value) {
+				return value ? value.charAt(1) + value.indexOf('d') : ''
+			}
+		}
+	})
+</script>
+</html>
